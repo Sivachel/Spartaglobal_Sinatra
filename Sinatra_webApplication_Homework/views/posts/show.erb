@@ -1,6 +1,6 @@
 <h1> Team : <%= @post[:title] %></h1>
 <h2> Position : <%= @post[:position] %></h2>
-<p><%= @post[:img_url] %></p>
+<img src="<%= @post[:img_url] %>" height="50%" width="50%"alt="Picture not found">
 <p><%= @post[:post_body] %></p>
 <form action="<%= @post[:id] %>" method="POST">
   <input type="hidden" name="_method" value="DELETE">
